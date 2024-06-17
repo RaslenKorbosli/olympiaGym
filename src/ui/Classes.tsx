@@ -47,11 +47,11 @@ type props = {
 };
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1060 },
+    breakpoint: { max: 3000, min: 1080 },
     items: 3,
   },
   tablet: {
-    breakpoint: { max: 1060, min: 464 },
+    breakpoint: { max: 1080, min: 464 },
     items: 2,
   },
   mobile: {
@@ -64,7 +64,7 @@ function Classes({ setSelectedPage }: props) {
   return (
     <section
       id="ourclasses"
-      className="mx-auto bg-primary-100 min-h-full py-36 "
+      className="mx-auto bg-primary-100 min-h-full py-20 "
     >
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
@@ -80,7 +80,6 @@ function Classes({ setSelectedPage }: props) {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          ;{' '}
           <div className="md:w-3/5">
             <HeaderText label="Our Classes" specialStyles="" />
             <p className="text-lg pb-5">

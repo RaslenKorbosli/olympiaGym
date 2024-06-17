@@ -17,3 +17,10 @@ export type imgProps = {
   description: string;
   imgUrl: string;
 };
+export type contactProps = {
+  id?: number;
+  contactText: string;
+  contactIcon: React.ReactNode;
+  contactLink: string;
+  contactDescription: string;
+};

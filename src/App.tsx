@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Benefits from '@/ui/Benefits';
 import Classes from '@/ui/Classes';
 import ContactUS from '@/ui/ContactUS';
+import Footer from './ui/Footer';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -17,6 +18,7 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
       <Classes setSelectedPage={setSelectedPage} />
       <ContactUS setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
